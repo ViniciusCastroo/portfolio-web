@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import logo from '../assets/logo portfolio.png';
+import logo from '/assets/logo portfolio.png';
 
 export default function NavBar() {
   return (
-    <header className="bg-gray-900 p-6">
+    <header className="bg-gray-800 p-6">
       <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="logo">

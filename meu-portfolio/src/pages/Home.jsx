@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div className="bg-gray-900 min-h-screen">
+        <div className="bg-gray-800 min-h-screen">
             {/* Hero Section */}
             <section className="flex items-center justify-center min-h-screen text-center">
                 <div className="text-white px-4">
@@ -29,7 +29,7 @@ function Home() {
             </section>
 
             {/* Seção Sobre Mim */}
-            <section className="py-12 bg-gray-800">
+            <section className="py-12 bg-gray-700">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
                     {/* Texto sobre mim */}
                     <div className="md:w-1/2 mb-8 md:mb-0 text-white">
@@ -39,43 +39,49 @@ function Home() {
                             e sempre busco aprender novas linguagens e frameworks para aprimorar minhas habilidades.
                         </p>
                     </div>
-                    {/* Imagem */}
                     <div className="md:w-1/2 flex justify-center">
-                        <img src="/assets/sobre-mim.jpg" alt="Sobre Mim" className="rounded-lg shadow-lg w-full max-w-md" />
+                        <img 
+                            src="/assets/sobre-mim.png" 
+                            alt="Sobre Mim" 
+                            className="rounded-lg shadow-lg w-1/3 md:w-1/2"
+                        />
                     </div>
                 </div>
+
+                {/* Espaço entre as seções */}
+                <div className="mt-12"></div>
 
                 {/* Cards de Linguagens de Programação */}
                 <h3 className="text-2xl font-bold text-white mb-4 text-center">Linguagens de Programação</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                     {/* Card 1 */}
-                    <div className="bg-gray-700 rounded-lg p-4 mx-2"> {/* Adicionado mx-2 */}
-                        <img src="/assets/icons/javascript.svg" alt="JavaScript" className="h-16 w-16 mb-2 mx-auto" />
+                    <div className="bg-gray-700 rounded-lg p-4 mx-2">
+                        <img src="/assets/js.svg" alt="JavaScript" className="h-16 w-16 mb-2 mx-auto" />
                         <h4 className="text-lg font-semibold text-center text-white">JavaScript</h4>
                     </div>
 
                     {/* Card 2 */}
-                    <div className="bg-gray-700 rounded-lg p-4 mx-2"> {/* Adicionado mx-2 */}
-                        <img src="/assets/icons/python.svg" alt="Python" className="h-16 w-16 mb-2 mx-auto" />
+                    <div className="bg-gray-700 rounded-lg p-4 mx-2">
+                        <img src="/assets/python.svg" alt="Python" className="h-16 w-16 mb-2 mx-auto" />
                         <h4 className="text-lg font-semibold text-center text-white">Python</h4>
                     </div>
 
                     {/* Card 3 */}
-                    <div className="bg-gray-700 rounded-lg p-4 mx-2"> {/* Adicionado mx-2 */}
-                        <img src="/assets/icons/java.svg" alt="Java" className="h-16 w-16 mb-2 mx-auto" />
-                        <h4 className="text-lg font-semibold text-center text-white">Java</h4>
+                    <div className="bg-gray-700 rounded-lg p-4 mx-2">
+                        <img src="/assets/react.svg" alt="react" className="h-16 w-16 mb-2 mx-auto" />
+                        <h4 className="text-lg font-semibold text-center text-white">React</h4>
                     </div>
 
                     {/* Card 4 */}
-                    <div className="bg-gray-700 rounded-lg p-4 mx-2"> {/* Adicionado mx-2 */}
-                        <img src="/assets/icons/csharp.svg" alt="C#" className="h-16 w-16 mb-2 mx-auto" />
-                        <h4 className="text-lg font-semibold text-center text-white">C#</h4>
+                    <div className="bg-gray-700 rounded-lg p-4 mx-2">
+                        <img src="/assets/html5.svg" alt="html" className="h-16 w-16 mb-2 mx-auto" />
+                        <h4 className="text-lg font-semibold text-center text-white">Html</h4>
                     </div>
 
                     {/* Card 5 */}
-                    <div className="bg-gray-700 rounded-lg p-4 mx-2"> {/* Adicionado mx-2 */}
-                        <img src="/assets/icons/ruby.svg" alt="Ruby" className="h-16 w-16 mb-2 mx-auto" />
-                        <h4 className="text-lg font-semibold text-center text-white">Ruby</h4>
+                    <div className="bg-gray-700 rounded-lg p-4 mx-2">
+                        <img src="/assets/css3.svg" alt="css" className="h-16 w-16 mb-2 mx-auto" />
+                        <h4 className="text-lg font-semibold text-center text-white">CSS</h4>
                     </div>
                 </div>
             </section>
