@@ -1,21 +1,20 @@
-import Formulario from './components/Formulario';
+
 
 function Home() {
     return (
-        <div className="bg-gray-800 min-h-screen">
-            {/* Hero Section */}
+        <div className="bg-dark-blue min-h-screen">
+         
             <section className="flex items-center justify-center min-h-screen text-center">
                 <div className="text-white px-4">
-                    {/* Frase de boas-vindas com emoji */}
+                   
                     <p className="text-lg md:text-xl text-gray-400 mb-4">👋 Olá, visitante!</p>
                     <h1 className="text-5xl md:text-7xl font-bold">
                         Meu nome é <span className="text-blue-500 italic">Vinicius</span>
                     </h1>
                     <p className="mt-4 text-lg md:text-xl text-gray-400">
-                        Trabalho com pessoas de todo o mundo para criar experiências personalizadas no Webflow.
+                        Trabalho com pessoas de todo o mundo para criar experiências personalizadas.
                     </p>
 
-                    {/* Social Links */}
                     <div className="flex justify-center mt-8 space-x-6">
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                             <img src="/assets/linkedin-white.svg" alt="LinkedIn" className="h-8 w-8 text-white hover:text-blue-500" />
@@ -30,10 +29,10 @@ function Home() {
                 </div>
             </section>
 
-            {/* Seção Sobre Mim */}
-            <section className="py-12 bg-gray-900">
+           
+            <section className="py-12 bg-dark-blue">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-                    {/* Texto sobre mim */}
+                  
                     <div className="md:w-1/2 mb-8 md:mb-0 text-white">
                         <h2 className="text-3xl font-bold mb-4">Sobre Mim</h2>
                         <p className="text-lg text-gray-400">
@@ -50,10 +49,9 @@ function Home() {
                     </div>
                 </div>
 
-                {/* Espaço entre as seções */}
+               
                 <div className="mt-12"></div>
 
-                {/* Cards de Linguagens de Programação */}
                 <h3 className="text-2xl font-bold text-white mb-4 text-center">Linguagens de Programação</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                     {/* Card 1 */}
@@ -87,7 +85,6 @@ function Home() {
                     </div>
                 </div>
 
-                {/* Espaço entre as seções */}
                 <div className="mt-12"></div>
 
                 {/* Seção Projetos */}
@@ -118,15 +115,72 @@ function Home() {
 
               
                {/* Formulário de contato */}
-               <Formulario/>
+               <section id="contato" className="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+                <h2 className="text-3xl font-bold text-white mb-4">Entre em Contato</h2>
+                <p className="text-gray-400 mb-8">Gostaria de discutir um projeto ou simplesmente dizer oi? Preencha o formulário abaixo!</p>
+            </div>
 
+            <div className="max-w-xl mx-auto">
+                <form action="#" method="POST" className="space-y-6">
+                    {/* Nome */}
+                    <div>
+                        <label htmlFor="nome" className="block text-sm font-medium text-gray-200">Seu Nome</label>
+                        <div className="mt-1">
+                            <input
+                                id="nome"
+                                name="nome"
+                                type="text"
+                                required
+                                className="w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Seu nome"
+                            />
+                        </div>
+                    </div>
 
-            {/* Footer */}
-            <footer className="bg-dark-blue py-4">
-                <div className="text-center text-gray-400">
-                    <p>&copy; 2024 Meu Nome. Todos os direitos reservados.</p>
-                </div>
-            </footer>
+                    {/* Email */}
+                    <div>
+                        <label htmlFor="email" className="block text-sm font-medium text-gray-200">Seu Email</label>
+                        <div className="mt-1">
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                required
+                                className="w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="seuemail@exemplo.com"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Mensagem */}
+                    <div>
+                        <label htmlFor="mensagem" className="block text-sm font-medium text-gray-200">Sua Mensagem</label>
+                        <div className="mt-1">
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                rows="4"
+                                required
+                                className="w-full px-4 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Escreva sua mensagem aqui..."
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    {/* Botão de Enviar */}
+                    <div>
+                        <button
+                            type="submit"
+                            className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                        >
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         </div>
     );
 }
