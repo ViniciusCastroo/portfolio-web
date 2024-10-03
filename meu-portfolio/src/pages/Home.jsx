@@ -1,3 +1,5 @@
+import Formulario from './components/Formulario';
+
 function Home() {
     return (
         <div className="bg-gray-800 min-h-screen">
@@ -29,7 +31,7 @@ function Home() {
             </section>
 
             {/* Seção Sobre Mim */}
-            <section className="py-12 bg-gray-700">
+            <section className="py-12 bg-gray-900">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
                     {/* Texto sobre mim */}
                     <div className="md:w-1/2 mb-8 md:mb-0 text-white">
@@ -84,7 +86,40 @@ function Home() {
                         <h4 className="text-lg font-semibold text-center text-white">CSS</h4>
                     </div>
                 </div>
+
+                {/* Espaço entre as seções */}
+                <div className="mt-12"></div>
+
+                {/* Seção Projetos */}
+                <h3 className="text-2xl font-bold text-white mb-4 text-center">Projetos</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Card 1 */}
+                    <div className="bg-gray-700 rounded-lg p-4">
+                        <img src="/path/to/first-project-image.png" alt="UI/UX Design Project" className="h-40 w-full object-cover mb-2 rounded-lg" />
+                        <h4 className="text-lg font-semibold text-white">UI/UX Design</h4>
+                        <p className="text-gray-400">Design Unraveled: Behind the Scenes of UI/UX Magic</p>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className="bg-gray-700 rounded-lg p-4">
+                        <img src="/path/to/second-project-image.png" alt="Sugee App" className="h-40 w-full object-cover mb-2 rounded-lg" />
+                        <h4 className="text-lg font-semibold text-white">App Design</h4>
+                        <p className="text-gray-400">Sugee: Loan Management System for Rural Sector</p>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className="bg-gray-700 rounded-lg p-4">
+                        <img src="/path/to/third-project-image.png" alt="Cinetrade App" className="h-40 w-full object-cover mb-2 rounded-lg" />
+                        <h4 className="text-lg font-semibold text-white">App Design</h4>
+                        <p className="text-gray-400">Cinetrade: Innovative way to invest in Digital Media</p>
+                    </div>
+                </div>
             </section>
+
+              
+               {/* Formulário de contato */}
+               <Formulario/>
+
 
             {/* Footer */}
             <footer className="bg-dark-blue py-4">
