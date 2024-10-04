@@ -33,7 +33,7 @@ function Home() {
                             Desde que comecei a programar, me apaixonei pelo universo da tecnologia 🚀 e estou sempre aprendendo coisas novas, ou pelo menos tentando... 😅
                         </p>
                         <p className="text-lg text-gray-400 mb-2">
-                            Atualmente, estou aprendendo um pouco mais sobre <strong>Python</strong>, <strong>React JS</strong> e <strong>C++</strong> 💻.
+                            Atualmente, estou aprendendo um pouco mais sobre <strong>Python</strong>, <strong>React JS</strong> 💻.
                         </p>
                         <p className="text-lg text-gray-400 mb-2">
                             Um dos meus maiores interesses é o <strong>Desenvolvimento de Sistemas IoT</strong> (Internet of Things) 🌐, pois acredito que essa tecnologia pode transformar o modo como interagimos com o mundo à nossa volta 💡.

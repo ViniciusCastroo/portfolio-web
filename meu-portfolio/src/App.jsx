@@ -106,5 +106,5 @@ function App() {
   );
 }
 
-// Certifique-se de que esta linha está presente
+
 export default App;
