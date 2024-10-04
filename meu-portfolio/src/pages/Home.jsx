@@ -46,7 +46,7 @@ function Home() {
                         <img 
                             src="/assets/sobre-mim.png" 
                             alt="Sobre Mim" 
-                            className="rounded-lg shadow-lg w-1/3 md:w-1/2 border border-white" // Adicionando borda e sombra
+                            className="rounded-lg shadow-lg w-3/4 md:w-full border border-white" // Ajustei o tamanho da imagem para ser mais proporcional
                         />
                     </div>
                 </div>

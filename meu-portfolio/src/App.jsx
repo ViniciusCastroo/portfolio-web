@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Outlet } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import { Footer } from './components/Footer';
@@ -18,9 +18,9 @@ function App() {
           init={particlesInit}
           options={{
             background: {
-              color: { value: "#000D21" },
+              color: { value: "#000D21" }, // Cor de fundo das partículas
             },
-            // Outras opções de partículas...
+            // Configurações adicionais de partículas
           }}
           style={{
             position: 'fixed',
@@ -28,11 +28,11 @@ function App() {
             left: 0,
             width: '100%',
             height: '100%',
-            zIndex: -1,
+            zIndex: -1, // Partículas continuam atrás do conteúdo
           }}
         />
 
-        <div style={{ position: 'relative', zIndex: 1 }}>
+        <div style={{ position: 'relative', zIndex: 2 }}> {/* Ajustei o z-index para evitar problemas de sobreposição */}
           <NavBar />
           <div style={{ paddingBottom: '4rem' }}>
             <Outlet /> {/* Este é o ponto onde os componentes de rota serão renderizados */}
