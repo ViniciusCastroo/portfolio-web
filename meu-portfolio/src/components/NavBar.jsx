@@ -45,7 +45,9 @@ export default function NavBar() {
     <Header $isScrolled={isScrolled}>
       <div className="flex justify-between items-center">
         <div className="logo">
-          <img src={logo} alt="Logo" className="h-20" />
+          <NavLink to="/">
+            <img src={logo} alt="Logo" className="h-20" />
+          </NavLink>
         </div>
         <nav className="flex items-center space-x-8">
           <StyledNavLink to="/">

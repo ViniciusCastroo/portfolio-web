@@ -7,8 +7,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <br></br>
-      <br></br>
+      <br></br> {/* desculpe por isso :(*/}
       <br></br>
       <br></br>
       <br></br>
