@@ -1,5 +1,5 @@
 # Portfolio React JS
-![foto site].(./assets/FotoSite.jpeg)
+![foto site](FotoSite.jpeg)
 
 
 
