@@ -76,7 +76,6 @@ const ProjetoDetalhes = () => {
       technologies: ['IoT Devices'],
       images: [
         '/assets/SprintEdge.jpeg',  
-    
       ],
     },
   ];
@@ -88,15 +87,15 @@ const ProjetoDetalhes = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-900 to-black text-white">
       <div className="container mx-auto py-12 px-6">
-        <h1 className="text-5xl font-bold text-white-500 mb-6">{project.title}</h1>
+        <h1 className="text-5xl font-bold text-white mb-6">{project.title}</h1>
 
         <section className="mb-8">
-          <h3 className="text-3xl font-semibold text-white-500 mb-2">Tecnologias Utilizadas</h3>
+          <h3 className="text-3xl font-semibold mb-2">Tecnologias Utilizadas</h3>
           <div className="flex gap-4 flex-wrap">
             {project.technologies.map((tech, index) => (
-              <span key={index} className="bg-gray-800 px-3 py-2 rounded-lg text-gray-300 shadow-md">
+              <span key={index} className="bg-black px-3 py-2 rounded-lg text-gray-300 shadow-md">
                 {tech}
               </span>
             ))}
@@ -104,16 +103,16 @@ const ProjetoDetalhes = () => {
         </section>
 
         <section className="mb-8">
-          <h3 className="text-3xl font-semibold text-white-500 mb-2">Descrição</h3>
+          <h3 className="text-3xl font-semibold mb-2">Descrição</h3>
           <p className="text-lg leading-relaxed">{project.description}</p>
         </section>
 
         {/* Galeria de Imagens */}
         <section className="mb-8">
-          <h3 className="text-3xl font-semibold text-white-500 mb-4">Galeria de Imagens</h3>
+          <h3 className="text-3xl font-semibold mb-4">Galeria de Imagens</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {project.images.map((image, index) => (
-              <div key={index} className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <div key={index} className="bg-black rounded-lg overflow-hidden shadow-lg">
                 <img
                   src={image}
                   alt={`Imagem ${index + 1}`}

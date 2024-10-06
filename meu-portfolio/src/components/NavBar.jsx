@@ -11,7 +11,7 @@ const Header = styled.header`
   width: 100%;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  background: ${({ $isScrolled }) => ($isScrolled ? 'rgba(255, 255, 255, 0.2)' : 'transparent')}; /* Fundo semi-transparente */
+  background: ${({ $isScrolled }) => ($isScrolled ? 'rgba(30, 57, 137, 0.0)' : '#1E3989')}; /* Azul sólido quando não rolado e azul semitransparente quando rolado */
   backdrop-filter: ${({ $isScrolled }) => ($isScrolled ? 'blur(10px)' : 'none')}; /* Aplica o desfoque quando rolado */
   z-index: 1000; /* Para garantir que fique acima de outros elementos */
 `;

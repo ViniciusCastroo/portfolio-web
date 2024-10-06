@@ -22,7 +22,7 @@ const Projetos = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-900 to-black text-white">
       <div className="container mx-auto py-12 px-6">
         <h1 className="text-4xl font-bold text-center mb-8">Meus Projetos</h1>
 
@@ -31,13 +31,13 @@ const Projetos = () => {
           <input
             type="text"
             placeholder="Buscar projetos..."
-            className="w-full sm:w-1/2 px-4 py-2 rounded-lg bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="w-full sm:w-1/2 px-4 py-2 rounded-lg bg-black text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
 
           <select
-            className="w-full sm:w-1/4 px-4 py-2 rounded-lg bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="w-full sm:w-1/4 px-4 py-2 rounded-lg bg-black text-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600"
             value={categoryFilter}
             onChange={(e) => setCategoryFilter(e.target.value)}
           >
@@ -52,7 +52,7 @@ const Projetos = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <Link to={`/projetos/${project.id}`} key={project.id}>
-              <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+              <div className="bg-black rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <img
                   src={project.imgSrc}
                   alt={project.title}
