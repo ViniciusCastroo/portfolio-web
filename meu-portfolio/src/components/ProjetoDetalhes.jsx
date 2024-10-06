@@ -30,18 +30,55 @@ const ProjetoDetalhes = () => {
     {
       id: 2,
       title: 'OceanSur',
-      date: '24 de Junho de 2024',
-      category: 'Internet of Things (IoT)',
-      description: 'Um projeto inovador no mundo de IoT.',
+      date: '14 de Junho de 2024',
+      category: 'Front-end',
+      description: 'O site da Océan Sûr visa informar como estão as situações dos oceanos ao redor do mundo. Fazendo com que pessoas que não tenham conhecimento na área ou até mesmo pessoas que possuam conhecimento na área consigam entender o que estamos passando para o site com isso fizemos um site que conta com 6 seções e em cada seção iremos abordar cada passo do nosso processo.',
       imgSrc: '/assets/HomeGS.jpeg',
-      technologies: ['Node.js', 'MongoDB', 'Express', 'IoT Devices'],
+      technologies: ['JavaScript','CSS', 'HTML', 'C++', 'IoT Devices'],
       images: [
-        '/assets/HomeGS.jpeg',
-        '/assets/DesafiosGS.jpeg',
+        '/assets/HomeGS.jpeg',  
+        '/assets/DesafioGS.jpeg',
         '/assets/ObjGS.jpeg',
       ],
     },
+    {
+      id: 3,
+      title: 'Vinharia Agnelo',
+      date: 'Abril de 2024',
+      category: 'Front-end',
+      description: 'O site da Vinharia Agnelo é uma plataforma online projetada para fornecer informações sobre os produtos. Nosso objetivo é criar uma experiência envolvente para os visitantes, transmitindo a paixão e a qualidade dos nossos vinhos.',
+      imgSrc: '/assets/HomeGS.jpeg',
+      technologies: ['JavaScript','CSS', 'HTML'],
+      images: [
+        '/assets/HomeAgnelo.jpeg',  
+        '/assets/VinhosAgnelo.jpeg',
+      ],
+    },
+    {
+      id: 4,
+      title: 'Grafico Dos Oceanos',
+      category: 'Front-end',
+      description: 'Océan Sûr é uma plataforma desenvolvida em Python utilizando o framework Dash. Esta plataforma tem como objetivo permitir a visualização e análise das condições dos principais oceanos do mundo: Pacífico, Atlântico, Índico e Ártico. O projeto gera dados simulados de pH, temperatura e turbidez dos oceanos, atualizando-os periodicamente para fornecer uma experiência próxima da realidade.',
+      imgSrc: '/assets/HomeGS.jpeg',
+      technologies: ['Python'],
+      images: [
+        '/assets/DashGS.jpeg',  
+        '/assets/Dash2GS.jpeg',
+      ],
+    },
     // outros projetos...
+    {
+      id: 0,
+      title: '',
+      category: 'Front-end',
+      description: 'A análise da temperatura do motor é um projeto que visa monitorar parâmetros críticos de temperatura utilizando a tecnologia Arduino. Ele fornece dados em tempo real, essenciais para preservar o motor, evitando sobreaquecimentos. O sistema utiliza um Arduino Uno, juntamente com um sensor DHT22 para medir a temperatura, LEDs de três cores (vermelho, verde e amarelo) para indicar diferentes níveis de alerta, um buzzer para alarmes sonoros em caso de temperatura crítica, e um display LCD I2C para exibir as leituras. Além disso, resistores e jumpers são utilizados para completar a montagem do circuito.',
+      imgSrc: '/assets/HomeGS.jpeg',
+      technologies: ['IoT Devices'],
+      images: [
+        '/assets/SprintEdge.jpeg',  
+    
+      ],
+    },
   ];
 
   const project = projects.find((project) => project.id === parseInt(id));
